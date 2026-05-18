@@ -28,7 +28,6 @@ export function SetupContent({ passedPageSelection }) {
     const [page, setPage] = useState(null);
 
     // Initialize page from passedPageSelection when the component mounts or when it changes.
-    // Avoid using DOMContentLoaded inside a React component � useEffect is the correct hook.
     useEffect(() => {
         if (passedPageSelection != null) {
             console.log('Page Selection (prop): ' + passedPageSelection);
@@ -58,7 +57,6 @@ export function SetupContent({ passedPageSelection }) {
     }
 
     function dropDownPageSelection() {
-        // Start with an empty placeholder value so the user explicitly chooses a page.
         return (
             <select onChange={(e) => handlePageSelection(e.target.value)} defaultValue={""}>
                 <option value="" disabled>Select a page</option>
@@ -71,8 +69,6 @@ export function SetupContent({ passedPageSelection }) {
 
     console.log("Page: " + page);
 
-    // Always display the dropdown page selector at the top of the UI
-    // <Banner pages={pages} onPageSelection={handlePageSelection} />
     return (
         <StrictMode>
             <section id="Banner">

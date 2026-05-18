@@ -80,6 +80,27 @@
         cursor: pointer;
     }
 
+.resumeIcon {
+    position: absolute;
+    right: 12px;
+    top: 4px;
+    width: auto;
+    height: 52px; /*fit into header area of the banner */
+}
+
+    .resumeIcon img {
+        height: 100%;
+        width: auto;
+        display: block;
+        cursor: pointer;
+    }
+
+.resumeText {
+    font-size: 12px;
+    color: white;
+    transform: translate(-7px, -7px);
+}
+
 
 .pageButtons {
     position: relative;

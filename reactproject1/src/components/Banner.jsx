@@ -1,5 +1,7 @@
 import './Banner.css'
 import githubLogo from '../assets/Github.png'
+import resumeIcon from '../assets/resumeIcon.png'
+import alstonSmithResume from '../assets/Alston Smith Resume.pdf'
 
 // Banner receives a list of page names and a callback for selection
 export default function Banner({ pages = [], onPageSelection }) {
@@ -37,6 +39,12 @@ export default function Banner({ pages = [], onPageSelection }) {
                     <div className="githubLogo">
                         <a href={repo}>
                             <img src={githubLogo} alt="githubLogo"></img>
+                        </a>
+                    </div>
+                    <div className="resumeIcon">
+                        <a href={alstonSmithResume}>
+                            <img src={resumeIcon} alt="resumeIcon"></img>
+                            <div className="resumeText">RESUME</div>
                         </a>
                     </div>
                 </section>
