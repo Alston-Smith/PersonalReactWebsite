@@ -65,6 +65,22 @@
     color: white;
 }
 
+.githubLogo {
+    position: absolute;
+    left: 12px;
+    top: 4px;
+    width: auto;
+    height: 52px; /*fit into header area of the banner */
+}
+
+    .githubLogo img {
+        height: 100%;
+        width: auto;
+        display: block;
+        cursor: pointer;
+    }
+
+
 .pageButtons {
     position: relative;
     top: 18px;
@@ -86,7 +102,7 @@
         box-sizing: border-box;
         font-size: 1rem;
         color: black; /* text color */
-        background-color: color-mix(turquoise, transparent 5%); /* button background color */
+        background-color: color-mix(turquoise, transparent 0%); /* button background color */
         border-radius: 0; /* remove rounded/beveled corners */
         border: 1px solid black;
         border-top: none; /* remove top border*/

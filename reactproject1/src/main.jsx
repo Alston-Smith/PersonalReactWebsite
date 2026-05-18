@@ -28,7 +28,7 @@ export function SetupContent({ passedPageSelection }) {
     const [page, setPage] = useState(null);
 
     // Initialize page from passedPageSelection when the component mounts or when it changes.
-    // Avoid using DOMContentLoaded inside a React component — useEffect is the correct hook.
+    // Avoid using DOMContentLoaded inside a React component ï¿½ useEffect is the correct hook.
     useEffect(() => {
         if (passedPageSelection != null) {
             console.log('Page Selection (prop): ' + passedPageSelection);
