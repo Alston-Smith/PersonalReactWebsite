@@ -1,0 +1,95 @@
+
+
+@font-face {
+    font-family: 'Venite-Adoremus';
+    src: url('../fonts/VeniteAdoremus-rgRBA.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aquire';
+    src: url('../fonts/AquireBold-8Ma60.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Toreks';
+    src: url('../fonts/ToreksRegular-rg11x.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AceOfSwords';
+    src: url('../fonts/AceOfSwords-R9x9W.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Banner styles */
+#banner {
+    font-family: AceOfSwords, Aquire, Venite-Adoremus, sans-serif;
+    display: flex;
+    position: fixed;
+    z-index: 1000; /* ensure banner renders above other page content */
+    left: 0;
+    top: 0;
+    flex-direction: column;
+    align-items: center; /* center children horizontally */
+    /* push children to the bottom edge of the fixed banner */
+    justify-content: flex-start;
+    /* give the fixed banner an explicit height so children can be positioned within it */
+    height: 100px;
+    box-sizing: border-box;
+    width: 100vw;
+    background-color: color-mix(darkOrange, transparent 10%);
+}
+
+/* background-color: rgba(3, 229, 234, 0.56); */
+
+.bannerHeader {
+    font-size: 28px;
+    color: white;
+    padding-top:4px;
+}
+
+.bannerSubHeader {
+    font-family: Aquire, sans-serif;
+    font-size: 12px;
+    color: white;
+}
+
+.pageButtons {
+    position: relative;
+    top: 18px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    width: 100vw;
+    gap: 0; /* remove gap between buttons */
+    font-size: 24px;
+    height: auto;
+    margin-top: auto;
+}
+
+/* make the buttons taller and fill their grid cells */
+    .pageButtons button {
+        font-family: Venite-Adoremus, sans-serif;
+        width: 100%;
+        min-height: 30px; /* taller buttons */
+        box-sizing: border-box;
+        font-size: 1rem;
+        color: black; /* text color */
+        background-color: color-mix(turquoise, transparent 5%); /* button background color */
+        border-radius: 0; /* remove rounded/beveled corners */
+        border: 1px solid black;
+        border-top: none; /* remove top border*/
+        border-bottom: none;
+    }
+

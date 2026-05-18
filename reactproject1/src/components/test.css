@@ -1,0 +1,50 @@
+.game-page {
+    font-family: sans-serif;
+    display: flex;
+    position: fixed;
+    top: 100px; /* start at bottom of the banner */
+    left: 0;
+    width: 100vw;
+    height: calc(100vh - 100px); 
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    padding-top: 10px;
+    box-sizing: border-box;
+
+    .game-header {
+        font-family: 'Venite Adoremus', sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .game {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .game-button1 {
+        color: black;
+        border-radius: 0;
+        border: 1px solid black;
+
+        button {
+            font-family: 'Venite Adoremus', sans-serif;
+            box-sizing: border-box;
+            font-size: 1rem;
+            color: black;
+            background-color: white;
+            border-radius: 0;
+            border: 3px solid black;
+        }
+    }
+}

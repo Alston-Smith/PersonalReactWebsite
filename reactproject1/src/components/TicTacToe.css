@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    padding: 0;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 22px;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+h3 {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+h4 {
+    margin-top: 0;
+    font-size: 16px;
+}
+
+h5 {
+    margin-top: 0;
+    font-size: 14px;
+}
+
+h6 {
+    margin-top: 0;
+    font-size: 12px;
+}
+
+code {
+    font-size: 1.2em;
+}
+
+ul {
+    padding-inline-start: 20px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+    margin: 20px;
+    padding: 0;
+}
+
+.square {
+    background: #000;
+    border: 1px solid #999;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 34px;
+    height: 34px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    width: 34px;
+    color: white; /* text color */
+    background-color: darkorange; /* button background color */
+    border-radius: 0; /* remove rounded/beveled corners */
+    border: 1px solid grey;
+}
+
+
+
+.status {
+    color: black;
+    background-color: white;
+    font-family: 'Venite Adoremus', sans-serif;
+}
+
+
+
+.board-row > div {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 0; /* optional */
+}
+
+.board-row:after {
+    clear: both;
+    content: '';
+    display: table;
+}
+
+.status {
+    margin-bottom: 10px;
+}
+
+.game {
+    display: flex;
+    position: fixed;
+    /* center the game container */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+
+
+.game-state-section {
+    display: flex;
+    flex-direction: row;
+    background-color: turquoise;
+}
+
+.user-board-size {
+    font-family: 'Venite Adoremus', sans-serif;
+    box-sizing: border-box;
+    font-size: 1rem;
+    color: black; /* text color */
+    background-color: white;
+}
+
+.user-board-size, textarea {
+    background-color: transparent;
+    color: white;
+}
+
+input[type="number"] {
+    font-family: 'Venite Adoremus', sans-serif;
+    box-sizing: border-box;
+    font-size: 1rem;
+    color: red; /* text color */
+    background-color: white; /* button background color */
+    border-radius: 0; /* remove rounded/beveled corners */
+    border: 0px solid black; /* border width, type, and color */
+    border-top: none; /* remove top border*/
+    border-bottom: none;
+}
+
+.game-info {
+    margin-left: 20px;
+    color: black; /* text color */
+    border-radius: 0; /* remove rounded/beveled corners */
+    border: 1px solid black;
+}
+
+    .game-info button {
+        font-family: 'Venite Adoremus', sans-serif;
+        box-sizing: border-box;
+        font-size: 1rem;
+        color: black; /* text color */
+        background-color: white; /* button background color */
+        border-radius: 0; /* remove rounded/beveled corners */
+        border: 3px solid black; /* border width, type, and color */
+    }

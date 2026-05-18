@@ -1,0 +1,98 @@
+
+@font-face {
+    font-family: 'Venite Adoremus';
+    src: '../fonts/VeniteAdoremus-rgRBA.ttf' format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BladeRunner';
+    src: url('../fonts/BladeRunner.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Martius';
+    src: url('../fonts/Martius-LV9L4.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+#Bio {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    gap: 5px;
+    /* center the bio block as a unit so the picture moves toward the page center
+       and the text sits to the right of it */
+    justify-content: center;
+    /* align children to the top so the text lines up with the image */
+    align-items: flex-start;
+    flex-grow: 1;
+    position: relative;
+    top: 100px;
+    height: 60vh;
+    background-color: color-mix(black, transparent 20%);
+
+
+    .bioTitle {
+        font-family: Martius, sans-serif;
+        font-size: 60px;
+        writing-mode: vertical-rl;
+        position: relative;
+        justify-content: left;
+        flex: 1 1 0;
+        max-width: 720px;
+        transform: rotate(180deg);
+        padding: 13px;
+        height: 60vh;
+        width: 45px;
+        color: black;
+        background-color: color-mix(yellow, transparent 20%);
+    }
+
+    .bioPicture {
+        flex: 0 0 auto;
+        width: auto;
+        height: 60vh;
+        /* ensure the image container is the same height as the image so the text can fill that height */
+        display: flex;
+        align-items: center; /* center the image vertically within its container */
+        justify-content: center; /* center the image horizontally within its container */
+        padding: 2px;
+    }
+
+
+    .bioText {
+        font-family: Tahoma ,'Times New Roman' ,'Trebuchet MS', Arial;
+        font-size: 30px;
+        position: static;
+        flex: 1 1 0;
+        text-align: left;
+        /* align with the top of the image */
+        align-self: flex-start;
+        max-width: 720px; /* keep lines readable when placed to the right of the image */
+        /* make the text container match the image height so the text reaches the bottom
+           and use flexbox to distribute content within that height */
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow: auto;
+    }
+}
+
+/* ensure the image has a fixed visual height and keeps its aspect ratio */
+.bioPicture img {
+  height: 331.6px;
+  width: auto;
+  display: block;
+  object-fit: cover;
+}
