@@ -27,6 +27,7 @@ createRoot(document.getElementById('root')).render(
 export function SetupContent({ passedPageSelection }) {
     const [pages, setPages] = useState(["Bio", "SolarSystem", "TicTacToe"]);
     const [page, setPage] = useState(null);
+    document.title = "Alston Smith";
 
     // Initialize page from passedPageSelection when the component mounts or when it changes.
     useEffect(() => {
