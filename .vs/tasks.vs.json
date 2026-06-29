@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "task-reactproject1",
+      "appliesTo": "reactproject1.slnx",
+      "type": "launch"
+    }
+  ]
+}

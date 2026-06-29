@@ -7,6 +7,7 @@ import Test from './components/Test.jsx'
 import TicTacToe from './components/TicTacToe.jsx'
 import TicTacToeTest from './components/TicTacToeTest.jsx'
 import Banner from './components/Banner.jsx'
+import  SolarSystem from './components/SolarSystem.jsx'
 
 
 
@@ -24,7 +25,7 @@ createRoot(document.getElementById('root')).render(
 )
 
 export function SetupContent({ passedPageSelection }) {
-    const [pages, setPages] = useState(["Bio", "Test", "TicTacToe"]);
+    const [pages, setPages] = useState(["Bio", "SolarSystem", "TicTacToe"]);
     const [page, setPage] = useState(null);
 
     // Initialize page from passedPageSelection when the component mounts or when it changes.
@@ -47,9 +48,8 @@ export function SetupContent({ passedPageSelection }) {
         // Dynamically map page name to the corresponding component
         const componentMap = {
             Bio,
-            Test,
+            SolarSystem,
             TicTacToe,
-            TicTacToeTest
         };
 
         const Component = componentMap[page];
